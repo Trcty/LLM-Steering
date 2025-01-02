@@ -49,7 +49,6 @@ class End2EndModel(nn.Module):
         self.max_new_token = max_new_token
         self.tmp = tmp
 
-        login('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')
 
         for param in self.base_model.parameters():
             param.requires_grad = False
